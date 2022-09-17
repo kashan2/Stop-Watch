@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.wrapper .time{
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+    padding: 0 10px;
+}
+
+.wrapper .time span{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.time span.colon{
+    width: 10px;
+}
+
+.time span.ms.colon,
+.time span.millisecond{
+    color: #1f51ff;
+}
+
+.wrapper .button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #1f51ff;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+
+.buttons button.active,
+.buttons button.stopActive{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+
+.start{
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    left: -30px;
+}
+
+
+.stop{
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    left: -10px;
+}
+
+.reset{
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+}
+
+
+#start:hover{
+    background-color: chartreuse;
+
+}
+
+#stop:hover{
+    background-color: yellow;
+
+}
+
+#reset:hover{
+    background-color: red;
+    
+
+}
+
+h1{
+    color: red;
+    font-weight: bolder;
+    position: relative;
+    top: -150px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline white;
+
+
+}
